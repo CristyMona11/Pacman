@@ -3,7 +3,6 @@
 <head>
 	<title>PacMan</title>
 	<style>
-		/* All of our CSS code goes here... */
 		* {
 			outline: 1px dotted purple;
 		}
@@ -51,30 +50,19 @@
 		div{
 			line-height: 0px;
 		}
-
-		/* End of CSS */
 	</style>
 </head>
 <body>
-	<!-- All of our HTML code goes here... -->
 	<div id="world">
-		<!--JavaScript will add all HTML for us.-->
 
 	</div>
-
-	<!-- End of HTML-->
 </body>
 <script>
-	// All of our JavaScript code goes here...
-
 	//1 => <div class='wall'></div>
 	//2 => <div class='coin'></div>
 	//3 => <div class='ground'></div>
 	//4 => <div class='ghost'></div>
 	//5 => <div class='pacman'></div>
-	//map = [1, 2, 3 ]
-	//map = [ [1,2,3], [1,2,3], [1,2,3] ];
-
 	pacman = {
 		x: 4,
 		y: 5
@@ -135,7 +123,6 @@
 	drawWorld();
 
 	document.onkeydown = function(event){
-		// console.log(event);
 		if (event.keyCode === 37){ //PACMAN move LEFT
 			if (map[pacman.y][pacman.x - 1] !==1){
 					map[pacman.y][pacman.x] = 3;
@@ -170,6 +157,5 @@
 		}
 		console.log(map);
 	}
-	// End of JavaScript
 </script>
 </html>
