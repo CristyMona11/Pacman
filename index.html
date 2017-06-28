@@ -85,38 +85,38 @@
 		[1,1,1,1,1,1,1,1,1,1,1,1,1],
 	];
 
-	var shark = document.getElementById('world');
+	var pac = document.getElementById('world');
 
 	function drawWorld(){
-		shark.innerHTML = '';
+		pac.innerHTML = '';
 		for (var y=0; y < map.length ; y++){
 
 			for (var x=0; x < map[y].length; x++){
 				if (map[y][x] === 1){
-					shark.innerHTML += "<div class='wall'></div>";
+					pac.innerHTML += "<div class='wall'></div>";
 				}
 				else if
 					(map[y][x] === 2){
-						shark.innerHTML += "<div class='coin'></div>";
+						pac.innerHTML += "<div class='coin'></div>";
 				}
 				else if
 					(map[y][x] === 3){
-						shark.innerHTML += "<div class='ground'></div>";
+						pac.innerHTML += "<div class='ground'></div>";
 				}
 				else if
 					(map[y][x] === 4){
-						shark.innerHTML += "<div class='ghost1'></div>";
+						pac.innerHTML += "<div class='ghost1'></div>";
 				}
 				else if
 					(map[y][x] === 5){
-						shark.innerHTML += "<div class='ghost2'></div>";
+						pac.innerHTML += "<div class='ghost2'></div>";
 				}
 				else if
 					(map[y][x] === 6){
-						shark.innerHTML += "<div class='pacman'></div>";
+						pac.innerHTML += "<div class='pacman'></div>";
 				}
 			}
-			shark.innerHTML += "<br>";
+			pac.innerHTML += "<br>";
 		}
 	}
 
